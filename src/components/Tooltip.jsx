@@ -8,7 +8,7 @@ const Tooltip = ({text,children}) => {
    <>
    <div className='tooltip'>
    <div className='tooltip-text' style={{display:show?'block':'none'}}>{text}</div>
-   <div className='child'  onMouseOver={()=>setShow(true)} onMouseLeave={()=>setShow(false)}>{children}</div>
+   <div className='child'  onMouseEnter={()=>setShow(true)} onMouseLeave={()=>setShow(false)}>{children}</div>
    </div>
    </>
   )
